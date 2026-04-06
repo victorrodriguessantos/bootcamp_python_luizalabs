@@ -1,3 +1,9 @@
+"""
+1. Par ou Ímpar
+
+Peça um número e diga se é par ou ímpar.
+"""
+
 def par_impar():
     numero = int(input("Escreve um número: "));
 
@@ -5,10 +11,18 @@ def par_impar():
         print("O número:", numero, "é par");
     else:
         print("O número:", numero, "é impar");
-
 # par_impar();
 
 ################
+"""
+2. Calculadora simples
+
+Faça um programa que:
+
+Receba 2 números
+Receba uma operação (+ - * /)
+Mostre o resultado
+"""
 
 def calc():
     numero1 = int(input("Informe o primeiro número: "));
@@ -29,10 +43,14 @@ def calc():
         print("Resultado da multiplicação é: ", resultado)
     else:
         print("Não foi possivel calcular sua operação!")
-
 # calc();
 
 ################
+"""
+3. Contador regressivo
+
+Mostre uma contagem de 10 até 0 com while.
+"""
 
 def contagem_regressiva():
 
@@ -43,9 +61,17 @@ def contagem_regressiva():
 # contagem_regressiva()
 
 ################
+"""
+4. Tabuada
 
-#Manipulação de Texto:
-texto = "Python"
+Peça um número e mostre a tabuada dele (1 a 10).
+"""
 
-print(texto[::-1])
+def tabuada():
+    numero = int(input("Digite um número: "));
+    cont = 1;
 
+    for cont in range(1, 11):
+        resultado = numero * cont;
+        print(f"""Tabuada: {numero} x {cont} = {resultado}""")
+# tabuada()
