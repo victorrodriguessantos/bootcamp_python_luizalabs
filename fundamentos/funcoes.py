@@ -13,7 +13,7 @@ def par_impar():
         print("O número:", numero, "é impar");
 # par_impar();
 
-################
+################################
 """
 2. Calculadora simples
 
@@ -45,7 +45,7 @@ def calc():
         print("Não foi possivel calcular sua operação!")
 # calc();
 
-################
+################################
 """
 3. Contador regressivo
 
@@ -60,7 +60,7 @@ def contagem_regressiva():
         cont = cont - 1
 # contagem_regressiva()
 
-################
+################################
 """
 4. Tabuada
 
@@ -73,5 +73,38 @@ def tabuada():
 
     for cont in range(1, 11):
         resultado = numero * cont;
-        print(f"""Tabuada: {numero} x {cont} = {resultado}""")
+        print(f"Tabuada: {numero} x {cont} = {resultado}")
 # tabuada()
+
+################################
+"""
+5. Validador de senha simples
+
+Peça uma senha e só aceite se for "1234".
+"""
+
+def password_validacao():
+    tentativas = 0
+
+    while tentativas < 3:
+        senha = input("Digite sua senha: ")
+
+        if senha == "1234":
+            tentativas + 1
+            print("Senha correta!");
+            break
+        else:
+            tentativas = tentativas + 1
+            print("Senha incorreta!");
+# password_validacao()
+
+################################
+"""
+6. Jogo de adivinhação
+Gere um número aleatório (1 a 100)
+O usuário tenta adivinhar
+Diga se é maior ou menor
+
+👉 Use: import random
+"""
+
